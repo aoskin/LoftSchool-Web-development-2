@@ -1,0 +1,42 @@
+.we-best {
+  height: 100vh;
+  background: url(../images/bg/we-best-bg.png) center no-repeat;
+  background-size: cover;
+  &__list {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    width: 33.3%;
+    text-align: center;
+    align-items: center;
+  }
+  &__icon {
+    height: 100px;
+    width: 120px;
+    
+    &--meat {
+      background: url(../images/icons/meat.svg) center no-repeat;
+    }
+    &--hand {
+      background: url(../images/icons/hand.svg) center no-repeat;
+    }
+    &--natural {
+      background: url(../images/icons/natural.svg) center no-repeat;
+    }
+  }
+  &__name {
+    font-family: $lifehack-font;
+    font-size: 24px;
+    padding-top: 45px;
+    padding-bottom: 40px;
+  }
+  &__desc {
+    font-family: $default-font;
+    font-size: 20px;
+  }
+}
+
+

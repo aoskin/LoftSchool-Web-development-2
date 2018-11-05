@@ -1,0 +1,36 @@
+.menu {
+  display: flex;
+  &__link {
+    color: white;
+    font-family: $medium-font;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+  }
+  &__link:after {
+    content: "";
+    height: 5px;
+    width: 5px;
+    background: white;
+    border-radius: 50%;
+    margin-left: 15px;
+  }
+  &__link:last-child:after {
+    background: transparent;
+  }
+}
+
+
+.Rounded_Rectangle_1 {
+  border-radius: 5px;
+  background-color: rgb(228, 80, 40);
+  position: absolute;
+  left: 923px;
+  top: 28px;
+  width: 97px;
+  height: 35px;
+  z-index: 229;
+}

@@ -1,0 +1,35 @@
+//base
+@import "base/normalize";
+@import "base/fonts";
+@import "base/variables";
+
+//blocks
+@import "blocks/container";
+@import "blocks/page-header";
+@import "blocks/btn";
+@import "blocks/slide-arrow";
+@import "blocks/page-main";
+@import "blocks/we-best";
+@import "blocks/reviews";
+@import "blocks/page-pagination";
+
+
+body {
+  font-family: $default-font;
+
+}
+p, 
+h1,
+h2,
+h3,
+ul {
+  margin: 0;
+  padding: 0;
+}
+section {
+  height: 100vh;
+}
+
+header {
+  height: 100vh;
+}

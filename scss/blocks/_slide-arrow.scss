@@ -1,0 +1,22 @@
+.slide-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+
+  &__link {
+    &::after {
+      content: '';
+      display: flex;
+      width: 25px;
+      height: 25px;
+      border-right: 3px solid white;
+      border-bottom: 3px solid white;
+      transform: rotate(45deg);
+      border-radius: 5px;
+    }
+  }
+  
+
+}
+
