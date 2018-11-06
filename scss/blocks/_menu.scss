@@ -9,6 +9,10 @@
     display: flex;
     align-items: center;
     margin-right: 15px;
+    &:hover,
+    &:active {
+      opacity: 0.8;
+    }
   }
   &__link:after {
     content: "";

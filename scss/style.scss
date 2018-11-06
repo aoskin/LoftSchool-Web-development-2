@@ -5,6 +5,7 @@
 
 //blocks
 @import "blocks/container";
+@import "blocks/section";
 @import "blocks/page-header";
 @import "blocks/btn";
 @import "blocks/slide-arrow";
@@ -26,9 +27,7 @@ ul {
   margin: 0;
   padding: 0;
 }
-section {
-  height: 100vh;
-}
+
 
 header {
   height: 100vh;
