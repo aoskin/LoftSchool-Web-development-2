@@ -18,30 +18,10 @@
         opacity: 1;
       }
       
+    }
 
-      &--vk {
-        background: url(../images/icons/vk.svg) no-repeat center;
-        background-size: contain;
-        
-      }
-
-      &--fb {
-        background: url(../images/icons/fb.svg) no-repeat center;
-        background-size: contain;
-
-      }
-
-      &--insta {
-        background: url(../images/icons/inst.svg) no-repeat center;
-        background-size: contain;
-
-      }
-
-      &--twitter {
-        background: url(../images/icons/twitter.svg) no-repeat center;
-        background-size: contain;
-
-      }
-
+  &__icon {
+    width: rem(25px);
+    height: rem(25px);
     }
   }

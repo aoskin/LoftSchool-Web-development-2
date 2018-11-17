@@ -1,0 +1,15 @@
+.icon {
+
+  &__logo {
+    width: 90px;
+    height: 70px;
+  }
+
+  &--best {
+    height: rem(100px);
+    width: rem(120px);
+    margin-left: rem(10px);
+    margin-right: rem(10px);
+  }
+  
+}

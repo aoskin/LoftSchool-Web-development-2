@@ -16,10 +16,21 @@
     color: white;
     line-height: 1.6;
     font-family: $default-font;
+
+    @include phones {
+      flex-direction: column;
+      height: auto;
+    }
   }
 
   &__contact {
     padding-left: 6%;
+
+    @include phones {
+      margin-bottom: 10px;
+      margin-top: 10px;
+      padding-left: 0%;
+    }
   }
 
   &__phone {
@@ -31,8 +42,16 @@
       background-image: url(../images/icons/phone.svg);
       background-repeat: no-repeat;
       display: block;
-      width: 20px;
-      margin-top: 8px;
+      width: rem(20px);
+      margin-top: rem(8px);
+
+      @include phones {
+        margin-top: rem(4px);
+      }
+    }
+
+    @include phones {
+      justify-content: center;
     }
   }
 
@@ -40,5 +59,10 @@
   
   &__social {
     padding-right: 6%;
+
+    @include phones {
+      margin-bottom: rem(10px);
+      padding-right: 0%;
+    }
   }
 }

@@ -1,8 +1,5 @@
 .reviews {
-  &__wrapper {
-
-  }
-
+  
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -29,6 +26,10 @@
     @include tablets {
       width: 50%;
       height: 25vh;
+    }
+    
+    @include phones {
+      height: 29vh;
     }
 
   }

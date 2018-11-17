@@ -2,6 +2,7 @@
   height: 100vh;
   width: 100%;
   min-height: 650px;
+
   &__title {
     font-family: $title-font;
     font-size: rem(64px);
@@ -12,7 +13,7 @@
     margin-bottom: 50px;
 
     @include phones {
-      margin-bottom: 30px;
+      margin-bottom: rem(30px);
     }
 
     &--dark {
@@ -24,7 +25,12 @@
     &--menu {
       position: absolute;
       text-align: left;
-      padding-left: 90px;
+      margin-left: rem(90px);
+
+      @include phones {
+        margin-left: rem(50px);
+      }
+      
     }
   }
 }

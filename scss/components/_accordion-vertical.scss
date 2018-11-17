@@ -23,7 +23,12 @@
         font-size: rem(40px);
         writing-mode: tb-rl;
         transform: rotate(180deg);
-        padding: 20px;
+        padding: rem(20px);
+
+        @include phones {
+          padding: rem(15px);
+
+        }
 
         &--bg-01 {
           background: url(../images/bg/menu-bg-01.png) no-repeat;

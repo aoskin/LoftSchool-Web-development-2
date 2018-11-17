@@ -33,19 +33,7 @@
   &__icon {
     height: rem(100px);
     width: rem(120px);
-    
-    &--meat {
-      background: url(../images/icons/meat.png) no-repeat;
-      background-size: contain;
-    }
-    &--hand {
-      background: url(../images/icons/hand.png) no-repeat;
-      background-size: contain;
-    }
-    &--natural {
-      background: url(../images/icons/natural.png) no-repeat;
-      background-size: contain;
-    }
+
 
     @include phones {
       margin-right: 20px;
