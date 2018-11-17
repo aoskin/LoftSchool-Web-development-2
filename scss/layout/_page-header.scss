@@ -1,0 +1,100 @@
+@import "components/logo.scss";
+@import "components/menu.scss";
+
+.page-header {
+  height: 100vh;
+  background: url(../images/bg/we-create-bg.png) no-repeat center;
+  background-size: cover;
+  
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+
+  &__slogan {
+    display: flex;
+    align-items: center;
+    height: 60vh;
+
+    @include tablets {
+      flex-direction: column;
+    }
+
+  }
+
+  &__img {
+    height: 100%;
+    width: 50%;
+    background: url(../images/bg/burger.png) no-repeat center;
+    background-size: contain;
+  }
+
+  &__content {
+    width: 50%;
+    margin-left: 20px;
+
+    @include tablets {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-left: 0px;
+    }
+
+  }
+
+  &__title {
+    font-family: $title-font;
+    font-size: rem(74px);
+    color: $yellow-color;
+    margin-top: rem(70px);
+    margin-bottom: rem(50px);
+
+    @include tablets {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    @include phones {
+      font-size: rem(64px);
+    }
+
+  }
+
+  &__desc {
+    font-family: $lifehack-font;
+    font-size: rem(65px);
+    color: #ffffff;
+    line-height: 1.0;
+
+    @include tablets {
+      width: 50%;
+      margin-top: 0px;
+      margin-bottom: 20px;
+    }
+
+    @include phones {
+      width: 100%;
+      font-size: rem(40px);
+    }
+  }
+
+  &__pagination {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    position: relative;
+  }
+
+}

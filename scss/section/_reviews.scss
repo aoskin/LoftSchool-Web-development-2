@@ -2,6 +2,7 @@
   &__wrapper {
 
   }
+
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -10,18 +11,28 @@
     height: 100%;
     list-style: none;
   }
+
   &__item {
     position: relative;
     width: 25%;
     filter: grayscale(100%);
     transition: filter .4s ease;
+
     &:hover {
       filter: none;
     }
+
     &:hover div {
       visibility: visible;
     }
+
+    @include tablets {
+      width: 50%;
+      height: 25vh;
+    }
+
   }
+
   &__content {
     position: absolute;
     top: 0;
@@ -37,19 +48,40 @@
     background-color: rgba(20,20,20,.7);
     transition: background-color .8s ease;
     padding: 50px;
+
+    @include tablets {
+      align-items: center;
+    }
   }
+
   &__img {
     width: 100%;
     height: 100%;
   }
+
   &__name {
     font-family: $title-font;
     padding-top: 50px;
     padding-bottom: 30px;
+
+    @include tablets {
+      padding-top: 5px;
+      padding-bottom: 12px;
+      font-size: 16px;
+    }
   }
+
   &__desc {
     font-family: $default-font;
     line-height: 1.8;
     padding-bottom: 20px;
+
+    @include tablets {
+      line-height: 1.4;
+      padding-bottom: 15px;
+      font-size: 14px;
+      text-align: center;
+    }
   }
+
 }

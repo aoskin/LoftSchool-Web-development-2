@@ -1,0 +1,65 @@
+.accordion {
+  color: white;
+
+  &__card {
+    margin-bottom: 40px;
+
+    &--active .accordion__content {
+      height: 120px;
+    }
+
+    &--active a,
+    &--active a::before {
+      color: $yellow-color;
+      transform: rotate(0deg);
+    }
+
+    @include tablets {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+  }
+   &__head {
+    display: flex;
+    align-items: center;
+    font-family: $title-font;
+    color: white;
+    text-decoration: none;
+    font-size: rem(24px);
+    
+    &::before {
+      content: "";
+      width: 0;
+      height: 0;
+      margin-right: 10px;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 5px solid #efaf3f;
+      transform: rotate(180deg);
+    }
+  }
+  &__body {
+    display: flex;
+    margin-top: 20px;
+
+  }
+  &__content {
+    overflow: hidden;
+    height: 0;
+
+  }
+  &__img {
+    background: url(../images/bg/accordion-user.png) no-repeat;
+    width: 50%;
+  }
+  &__profs {
+    font-family: $bold-font;
+    margin-bottom: 25px;
+  }
+  &__desc {
+    line-height: 1.714;
+  }
+
+}

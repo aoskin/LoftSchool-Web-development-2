@@ -1,0 +1,47 @@
+.social {
+
+  &__list {
+    display: flex;
+    list-style: none;
+    height: 20px;
+  }
+
+  &__item {
+      width: 20px;
+      display: block;
+      color: white;
+      margin-right: 15px;
+      opacity: 0.5;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 1;
+      }
+      
+
+      &--vk {
+        background: url(../images/icons/vk.svg) no-repeat center;
+        background-size: contain;
+        
+      }
+
+      &--fb {
+        background: url(../images/icons/fb.svg) no-repeat center;
+        background-size: contain;
+
+      }
+
+      &--insta {
+        background: url(../images/icons/inst.svg) no-repeat center;
+        background-size: contain;
+
+      }
+
+      &--twitter {
+        background: url(../images/icons/twitter.svg) no-repeat center;
+        background-size: contain;
+
+      }
+
+    }
+  }

@@ -13,7 +13,7 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__top container">
+      <div class="page-header__top">
           <a class="logo" href="#"></a>
           <nav class="menu">
             <a class="menu__link" href="">О нас</a>
@@ -24,7 +24,25 @@
             <a class="menu__link" href="">как мы работаем</a>
             <a class="menu__link" href="">Контакты</a>
           </nav>
-          <a class="btn btn--header">Заказать</a>
+          <div class="page-header__inner">
+            <a class="btn btn--header">Заказать</a>
+            <div class="toggle-menu">
+              <a class="toggle-menu__btn" href="#">
+                <span class="toggle-menu__line"></span>
+              </a>
+              <nav class="toggle-menu__list">
+                <a class="toggle-menu__item" href="">О нас</a>
+                <a class="toggle-menu__item" href="">Бургеры</a>
+                <a class="toggle-menu__item" href="">Команда</a>
+                <a class="toggle-menu__item" href="">Меню</a>
+                <a class="toggle-menu__item" href="">Отзывы</a>
+                <a class="toggle-menu__item" href="">как мы работаем</a>
+                <a class="toggle-menu__item" href="">Контакты</a>
+              </nav>
+            </div>
+          </div>
+          
+          
       </div>
       <div class="page-header__slogan container">
         <div class="page-header__img"></div>
@@ -54,24 +72,125 @@
           <h2 class="section__title section__title--dark">Мы лучшие</h2>
           <ul class="we-best__list">
             <li class="we-best__item">
+              <div class="we-best__icon-wrap">
               <i class="we-best__icon we-best__icon--meat"></i>
-              <h3 class="we-best__name">100% свежее мясо</h3>
-              <p class="we-best__desc">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</p>
+              </div>
+              <div class="we-best__content">
+                <h3 class="we-best__name">100% свежее мясо</h3>
+                <p class="we-best__desc">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</p>
+              </div>
             </li>
             <li class="we-best__item">
-              <i class="we-best__icon we-best__icon--hand"></i>
-              <h3 class="we-best__name">Ручная  сборка</h3>
-              <p class="we-best__desc">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</p>
+              <div class="we-best__icon-wrap">
+                <i class="we-best__icon we-best__icon--hand"></i>
+              </div>
+              <div class="we-best__content">
+                <h3 class="we-best__name">Ручная  сборка</h3>
+                <p class="we-best__desc">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</p>
+              </div>
             </li>
             <li class="we-best__item">
-              <i class="we-best__icon we-best__icon--natural"></i>
-              <h3 class="we-best__name">Натуральные ингредиенты</h3>
-              <p class="we-best__desc">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</p>
+              <div class="we-best__icon-wrap">
+                <i class="we-best__icon we-best__icon--natural"></i>
+              </div>
+              <div class="we-best__content">
+                <h3 class="we-best__name">Натуральные ингредиенты</h3>
+                <p class="we-best__desc">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
+      <section class="section team">
+          <h2 class="section__title hidden">Наша команда</h2>
+          <div class="team__item"></div>
+          <div class="team__item team__item--info">
+            <h3 class="section__title section__title--yellow">Команда</h3>
+            <div class="team__wrapper">
+            <div class="accordion">
+              <div class="accordion__card">
+                <a class="accordion__head" href="">Дэниэл Редклиф</a>
+                <div class="accordion__body">
+                  <div class="accordion__img"></div>
+                  <div class="accordion__content">
+                    <p class="accordion__profs">Оператор</p>
+                    <p class="accordion__desc">С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__card">
+                <a class="accordion__head" href="">Ричард Джеймс</a>
+                <div class="accordion__body">
+                  <div class="accordion__img"></div>
+                  <div class="accordion__content">
+                    <p class="accordion__profs">Оператор</p>
+                    <p class="accordion__desc">С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__card">
+                <a class="accordion__head" href="">Джейк Финн</a>
+                <div class="accordion__body">
+                  <div class="accordion__img"></div>
+                  <div class="accordion__content">
+                    <p class="accordion__profs">Оператор</p>
+                    <p class="accordion__desc">С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__card">
+                <a class="accordion__head" href="">Николай Иванов</a>
+                <div class="accordion__body">
+                  <div class="accordion__img"></div>
+                  <div class="accordion__content">
+                    <p class="accordion__profs">Оператор</p>
+                    <p class="accordion__desc">С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  
+          </div>
+        </section>
+        <section class="section menu-section">
+          <h2 class="section__title section__title--menu">Меню</h2>
+          <div class="accordion-vertical">
+              <div class="accordion-vertical__card">
+                <a class="accordion-vertical__head accordion-vertical__head--bg-01" href="">Для мясоедов</a>
+                <div class="accordion-vertical__body">
+                  <p class="accordion-vertical__content">Речевой акт редуцирует диалектический характер. Развивая эту тему, 
+                    заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
+                    Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм 
+                    сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
+                  </p>
+                  </div>
+              </div>
+              <div class="accordion-vertical__card">
+                <a class="accordion-vertical__head accordion-vertical__head--bg-02" href="">Вегетарианское</a>
+                <div class="accordion-vertical__body">
+                  <p class="accordion-vertical__content">Речевой акт редуцирует диалектический характер. Развивая эту тему, 
+                    заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
+                    Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм 
+                    сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
+                  </p>
+                  </div>
+              </div>
+              <div class="accordion-vertical__card">
+                <a class="accordion-vertical__head accordion-vertical__head--bg-03" href="">Диетическое</a>
+                <div class="accordion-vertical__body">
+                  <p class="accordion-vertical__content">Речевой акт редуцирует диалектический характер. Развивая эту тему, 
+                    заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
+                    Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм 
+                    сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
+                  </p>
+                </div>
+              </div>
+             
+          </div>
+  
+        </section>
       <section class="section reviews">
+          <h2 class="section__title hidden">Отзывы о нас</h2>
           <ul class="reviews__list">
             <li class="reviews__item">
               <img class="reviews__img" src="images/photo/photo-01.jpg" alt="Отзыв клиента">
@@ -146,12 +265,34 @@
               </div>
             </li>
           </ul>
-
       </section>
-
+     
 
     </main>
     <footer class="page-footer">
+      <div class="page-footer__inner">
+        <div class="page-footer__contact">
+          <p class="page-footer__adress">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</p>
+          <p class="page-footer__phone">+7 (812) 377-13-77</p>
+
+        </div>
+        <div class="page-footer__social social">
+            <ul class="social__list">
+                <li class="social__item social__item--vk">
+                  <a class="social__link" href="#"></a>
+                </li>
+                <li class="social__item social__item--fb">
+                  <a class="social__link" href="#"></a>
+                </li>
+                <li class="social__item social__item--insta">
+                  <a class="social__link" href="#"></a>
+                </li>
+                <li class="social__item social__item--twitter">
+                  <a class="social__link" href="#"></a>
+                </li>
+              </ul>
+        </div>
+      </div>
 
     </footer>
   

@@ -25,16 +25,9 @@
   &__link:last-child:after {
     background: transparent;
   }
+
+  @include tablets {
+    display: none;
+  } 
 }
 
-
-.Rounded_Rectangle_1 {
-  border-radius: 5px;
-  background-color: rgb(228, 80, 40);
-  position: absolute;
-  left: 923px;
-  top: 28px;
-  width: 97px;
-  height: 35px;
-  z-index: 229;
-}

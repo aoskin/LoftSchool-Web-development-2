@@ -1,22 +1,64 @@
+// resolutions
+$desktop: 1200px;
+$laptop: 992px;
+$tablets: 768px;
+$phones: 480px;
+$phones-sm: 320px;
+
+//fonts
+$default-font: "UbuntuLight";
+$medium-font: "UbuntuMedium";
+$bold-font: "UbuntuBold";
+$title-font: "GagalinRegular";
+$lifehack-font: "Lifehack";
+
+//colors
+$yellow-color: #f9b43b;
+$accent-color: rgb(228, 80, 40);
+$grey-color:  rgb(47, 50, 52);
+
 //base
 @import "base/normalize";
 @import "base/fonts";
-@import "base/variables";
+@import "base/media";
 
-//blocks
-@import "blocks/container";
-@import "blocks/section";
-@import "blocks/page-header";
-@import "blocks/btn";
-@import "blocks/slide-arrow";
-@import "blocks/page-main";
-@import "blocks/we-best";
-@import "blocks/reviews";
-@import "blocks/page-pagination";
+//layout
+@import "layout/page-header";
+@import "layout/page-main";
+@import "layout/page-footer";
 
+//sections
+@import "section/we-best";
+@import "section/reviews";
+@import "section/team";
+@import "section/menu-section";
+
+//components
+@import "components/container";
+@import "components/section";
+@import "components/btn";
+@import "components/slide-arrow";
+@import "components/page-pagination";
+@import "components/accordion";
+@import "components/accordion-vertical";
+@import "components/social";
+@import "components/toggle-menu";
+
+
+html {
+  @include tablets {
+    font-size: rem(15px);
+  }
+
+  @include phones {
+    font-size: rem(13px);
+  }
+}
 
 body {
   font-family: $default-font;
+  font-size: rem(14px);
+  line-height: 1.42;
 
 }
 p, 
@@ -28,7 +70,6 @@ ul {
   padding: 0;
 }
 
-
-header {
-  height: 100vh;
+.hidden {
+  display: none;
 }

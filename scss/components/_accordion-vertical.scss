@@ -1,0 +1,54 @@
+.accordion-vertical {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+
+    &__card {
+      display: flex;
+      background: #2f3234;
+      opacity: .929;
+
+      &--active .accordion-vertical__body {
+        width: 540px;
+      }
+
+    }
+
+    &__head {
+        display: flex;
+        align-items: center;
+        font-family: $title-font;
+        color: white;
+        text-decoration: none;
+        font-size: rem(40px);
+        writing-mode: tb-rl;
+        transform: rotate(180deg);
+        padding: 20px;
+
+        &--bg-01 {
+          background: url(../images/bg/menu-bg-01.png) no-repeat;
+          background-size: cover;
+    
+        }
+        &--bg-02 {
+          background: url(../images/bg/menu-bg-02.png) no-repeat;
+          background-size: cover;
+        }
+        &--bg-03 {
+          background: url(../images/bg/menu-bg-03.png) no-repeat;
+          background-size: cover;
+
+        }
+
+    }
+
+        &__body {
+          width: 0;
+          overflow: hidden;
+        }
+    
+    &__content {
+      padding: 60px 30px;
+    }
+
+}

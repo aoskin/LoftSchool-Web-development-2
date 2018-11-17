@@ -1,0 +1,77 @@
+.we-best {
+  height: 100vh;
+  background: url(../images/bg/we-best-bg.png) center no-repeat;
+  background-size: cover;
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+
+    @include phones {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    width: 33.3%;
+    text-align: center;
+    align-items: center;
+
+    @include phones {
+      width: 100%;
+      margin-bottom: rem(60px);
+      flex-direction: row;
+      text-align: left;
+    }
+  }
+  &__icon-wrap {
+    display: flex;
+  }
+
+  &__icon {
+    height: rem(100px);
+    width: rem(120px);
+    
+    &--meat {
+      background: url(../images/icons/meat.png) no-repeat;
+      background-size: contain;
+    }
+    &--hand {
+      background: url(../images/icons/hand.png) no-repeat;
+      background-size: contain;
+    }
+    &--natural {
+      background: url(../images/icons/natural.png) no-repeat;
+      background-size: contain;
+    }
+
+    @include phones {
+      margin-right: 20px;
+    }
+
+  }
+  &__name {
+    font-family: $lifehack-font;
+    font-size: rem(24px);
+    margin-top: rem(45px);
+    margin-bottom: rem(40px);
+
+    @include phones {
+      margin-bottom: rem(10px);
+      margin-top: rem(20px);
+    }
+  }
+  &__desc {
+    font-family: $default-font;
+    font-size: rem(20px);
+
+    @include phones {
+      font-size: rem(16px);
+      margin-right: rem(10px);
+    }
+  }
+}
+
+

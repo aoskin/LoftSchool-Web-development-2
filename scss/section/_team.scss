@@ -1,0 +1,30 @@
+.team {
+  position: relative;
+  display: flex;
+  background: url(../images/bg/team-bg.png) center no-repeat;
+  background-size: cover;
+  
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    width: 50%;
+
+    @include tablets {
+      width: 0%;
+    }
+    
+    &--info {
+      background: $grey-color;
+      opacity: 0.929;
+
+      @include tablets {
+        width: 100%;
+      }
+
+    }
+  }
+}
+
