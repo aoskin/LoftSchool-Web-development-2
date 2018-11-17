@@ -12,6 +12,7 @@
   &__item {
     position: relative;
     width: 25%;
+    height: 50%;
     filter: grayscale(100%);
     transition: filter .4s ease;
 
@@ -25,11 +26,11 @@
 
     @include tablets {
       width: 50%;
-      height: 25vh;
+      height: 25%;
     }
     
     @include phones {
-      height: 29vh;
+      //height: 25%;
     }
 
   }
