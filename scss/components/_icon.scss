@@ -1,8 +1,8 @@
 .icon {
 
   &__logo {
-    width: 90px;
-    height: 70px;
+    width: rem(90px);
+    height: rem(70px);
   }
 
   &--best {
@@ -11,5 +11,6 @@
     margin-left: rem(10px);
     margin-right: rem(10px);
   }
+  
   
 }

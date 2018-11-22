@@ -1,0 +1,123 @@
+.hamburger {
+  display: none;
+  overflow: visible;
+  margin: 0;
+  padding: rem(10px);
+  z-index: 2;
+  cursor: pointer;
+  transition-timing-function: linear;
+  transition-duration: .15s;
+  transition-property: opacity,filter;
+  text-transform: none;
+  color: inherit;
+  border: 0;
+  background-color: transparent;
+
+  @include tablets {
+    display: flex;
+  }
+
+  &__wrapper {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+    z-index: 1;
+  }
+
+  &__inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px; 
+  }
+
+  &__inner,
+  &__inner::before,
+  &__inner::after {
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease; 
+  }
+
+  &__inner::before,
+  &__inner::after {
+    content: "";
+    display: block; 
+  }
+
+  &__inner::before {
+    top: -10px; 
+  }
+
+  &__inner::after {
+    bottom: -10px;
+  }
+
+  &__link {
+    color: #fff;
+    font-family: $medium-font;
+    font-size: rem(24px);
+    text-transform: uppercase;
+    text-decoration: none;
+    align-items: center;
+    margin-right: rem(15px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &:after {
+      content: "";
+      height: 5px;
+      width: 5px;
+      background: #fff;
+      border-radius: 50%;
+      margin-top: rem(25px);
+      margin-bottom: rem(25px);
+    }
+
+    &:last-child:after {
+      background: transparent;
+
+  }
+
+  }
+
+  &__list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #2f3234;
+    opacity: .929;
+  }
+
+  &--active .hamburger__list {
+    display: flex;
+  }
+
+  &--active .hamburger__inner {
+    transform: translate3d(0, 0, 0) rotate(45deg);
+    &::before {
+      transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
+      opacity: 0; 
+    }
+    &::after {
+      transform: translate3d(0,-10px,0) rotate(-90deg);
+    }
+
+  }
+
+
+
+
+}

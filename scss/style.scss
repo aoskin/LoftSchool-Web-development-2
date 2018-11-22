@@ -3,7 +3,7 @@ $desktop: 1200px;
 $laptop: 992px;
 $tablets: 768px;
 $phones: 480px;
-$phones-sm: 320px;
+$smallPhone: 320px;
 
 //fonts
 $default-font: "UbuntuLight";
@@ -18,32 +18,33 @@ $accent-color: rgb(228, 80, 40);
 $grey-color:  rgb(47, 50, 52);
 
 //base
-@import "base/normalize";
-@import "base/fonts";
-@import "base/media";
+@import "./base/normalize";
+@import "./base/fonts";
+@import "./base/media";
 
 //layout
-@import "layout/page-header";
-@import "layout/page-main";
-@import "layout/page-footer";
+@import "./layout/page-header";
+@import "./layout/page-main";
+@import "./layout/page-footer";
 
 //sections
-@import "section/we-best";
-@import "section/reviews";
-@import "section/team";
-@import "section/menu-section";
+@import "./section/we-best";
+@import "./section/reviews";
+@import "./section/team";
+@import "./section/menu-section";
+@import "./section/burgers";
 
 //components
-@import "components/container";
-@import "components/section";
-@import "components/btn";
-@import "components/slide-arrow";
-@import "components/page-pagination";
-@import "components/accordion";
-@import "components/accordion-vertical";
-@import "components/social";
-@import "components/toggle-menu";
-@import "components/icon";
+@import "./components/container";
+@import "./components/section";
+@import "./components/btn";
+@import "./components/slide-arrow";
+@import "./components/page-pagination";
+@import "./components/accordion";
+@import "./components/accordion-vertical";
+@import "./components/social";
+@import "./components/icon";
+@import "./components/hamburger";
 
 
 html {

@@ -1,0 +1,151 @@
+.burgers {
+
+	background: #f9b43b;
+	background: linear-gradient(to bottom,  #f9b43b 0%,#eb8c38 40%,#eb8c38 60%,#eb8c38 60%,#f9b43b 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9b43b', endColorstr='#f9b43b',GradientType=0 );
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	&__wrapper {
+		display: flex;
+		height: 80%;
+		position: relative;
+		color: white;
+
+		@include phones {
+			width: 80%;
+		}
+	}
+
+	&__content {
+		display: flex;
+		align-items: center;
+		font-family: $default-font;
+
+		@include tablets {
+			flex-direction: column;
+		}
+	}
+
+	&__img-wrap {
+		height: 100%;
+		width: 50%;
+		display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+		background: url(../images/burgers/burger-slide-01.png) no-repeat center;
+		background-size: contain;
+
+		@include tablets {
+			width: 100%;
+			height: 100%;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+
+	&__icon-wrap {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: rem(80px);
+		width: rem(80px);
+		background-color: #eb8c38;
+		border-radius: 5px;
+		font-family: $title-font;
+		text-align: center;
+		cursor: pointer;
+
+		&--kkal {
+			background-color: transparent;
+			opacity: 0.5;
+		}
+
+		@include phones {
+			top: -30px;
+		}
+	}
+
+	&__desc {
+		font-family: $default-font;
+	}
+
+	&__list {
+		position: absolute;
+		display: none;
+		left: 80px;
+    top: 0px;
+		width: rem(270px);
+		flex-direction: column;
+		background-color: hsla(0, 0%, 100%, 0.8);
+		color: black;
+		font-family: $medium-font;
+		
+
+		&--active {
+			display: flex;
+		}
+	}
+		
+	&__item {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		margin-top: rem(14px);
+		margin-bottom: rem(14px);
+	}
+
+	&__icon {
+		width: rem(40px);
+		height: rem(40px);
+
+		&-name {
+			position: relative;
+
+			&--kkal {
+				position: absolute;
+				top: 35px;
+				line-height: 23px;
+				
+				@include phones {
+					top: 28px;
+					line-height: 20px;
+				}
+			}
+		}
+	}
+
+
+	&__text-wrap {
+		width: 50%;
+
+		@include phones {
+			width: 90%;
+			text-align: center;
+		}
+	}
+
+	&__order-wrap {
+		display: flex;
+		align-items: center;
+
+		@include phones {
+			margin-top: rem(20px);
+		}
+	}
+
+	&__price {
+		font-family: $title-font;
+		font-size: rem(64px);
+		color: $accent-color;
+		margin-right: rem(30px);
+
+		@include tablets {
+			font-size: rem(24px);
+		}
+	}
+
+}

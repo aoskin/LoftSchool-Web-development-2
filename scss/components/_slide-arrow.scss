@@ -4,17 +4,35 @@
   align-items: center;
   height: 30vh;
 
+
+  &--burgers {
+    height: auto;
+  }
+
   &__link {
     &::after {
       content: '';
       display: flex;
-      width: 25px;
-      height: 25px;
+      padding: rem(10px);
       border-right: 3px solid white;
       border-bottom: 3px solid white;
       transform: rotate(45deg);
       border-radius: 5px;
+
     }
+
+    &--left::after {
+      transform: rotate(130deg);
+
+    }
+
+    &--right::after {
+      transform: rotate(-45deg);
+      
+    }
+
+
+
 
   }
 

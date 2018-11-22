@@ -4,17 +4,34 @@
   min-height: 650px;
 
   &__title {
+
     font-family: $title-font;
     font-size: rem(64px);
     letter-spacing: 5px;
     line-height: 0.889;
     text-align: center;
-    padding-top: 140px;
-    margin-bottom: 50px;
+    padding-top: rem(140px);
+    margin-bottom: rem(50px);
 
     @include phones {
       margin-bottom: rem(30px);
+      font-size: rem(44px);
+      padding-top: rem(80px);
     }
+
+    &--burgers {
+      color: white;
+      padding-top: 0;
+      text-align: left;
+
+      @include phones {
+        text-align: center;
+      }
+    }
+
+
+
+
 
     &--dark {
       color: $grey-color;

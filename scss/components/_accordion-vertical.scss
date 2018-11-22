@@ -10,6 +10,12 @@
 
       &--active .accordion-vertical__body {
         width: 540px;
+
+        @include phones {
+          width: 50%;
+          display: flex;
+          align-items: center;
+        }
       }
 
     }
@@ -53,7 +59,13 @@
         }
     
     &__content {
-      padding: 60px 30px;
+      padding: rem(60px) rem(30px);
+
+      @include phones {
+        padding: rem(10px) rem(5px);
+        font-size: rem(10px);
+      }
+
     }
 
 }

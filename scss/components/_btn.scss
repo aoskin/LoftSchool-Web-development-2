@@ -1,5 +1,8 @@
 
 .btn {
+  height: rem(18px);
+  display: flex;
+  align-items: center;
   font-family: $medium-font;
   font-size: 13px;
   color: white;
@@ -7,12 +10,13 @@
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
+  background: $accent-color;
+  cursor: pointer;
+
   &:hover {
     opacity: 0.8;
   }
-  &--header {
-    background: $accent-color;
-  }
+  
   &--reviews {
     background: $grey-color;
   }

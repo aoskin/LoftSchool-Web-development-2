@@ -25,6 +25,11 @@
       flex-direction: row;
       text-align: left;
     }
+
+    @include smallPhone {
+      margin-bottom: rem(30px);
+    }
+    
   }
   &__icon-wrap {
     display: flex;
