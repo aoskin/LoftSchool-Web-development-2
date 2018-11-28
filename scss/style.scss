@@ -33,6 +33,7 @@ $grey-color:  rgb(47, 50, 52);
 @import "./section/team";
 @import "./section/menu-section";
 @import "./section/burgers";
+@import "./section/order";
 
 //components
 @import "./components/container";
@@ -45,6 +46,7 @@ $grey-color:  rgb(47, 50, 52);
 @import "./components/social";
 @import "./components/icon";
 @import "./components/hamburger";
+@import "./components/form";
 
 
 html {

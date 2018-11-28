@@ -15,6 +15,33 @@
     height: 50%;
     filter: grayscale(100%);
     transition: filter .4s ease;
+    background-size: cover;
+    background-position: center;
+
+    &--one {
+      background-image: url(../images/photo/photo-01.jpg);
+    }
+    &--two {
+      background-image: url(../images/photo/photo-02.jpg);
+    }
+    &--three {
+      background-image: url(../images/photo/photo-03.jpg);
+    }
+    &--four {
+      background-image: url(../images/photo/photo-04.jpg);
+    }
+    &--five {
+      background-image: url(../images/photo/photo-05.jpg);
+    }
+    &--six {
+      background-image: url(../images/photo/photo-06.jpg);
+    }
+    &--seven {
+      background-image: url(../images/photo/photo-07.jpg);
+    }
+    &--eight {
+      background-image: url(../images/photo/photo-08.jpg);
+    }
 
     &:hover {
       filter: none;
