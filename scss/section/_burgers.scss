@@ -9,33 +9,67 @@
 	
 	&__wrapper {
 		display: flex;
-		height: 80%;
+		width: 90%;
+		height: 100%;
 		position: relative;
 		color: white;
+		overflow: hidden;
 
 		@include phones {
 			width: 80%;
+			height: 80%;
 		}
+	}
+
+	&__inner {
+		width: 100%;
+		display: flex;
+		position: relative;
+		will-change: right;
+		transition: right 0.5s;
+
 	}
 
 	&__content {
 		display: flex;
 		align-items: center;
+		justify-content: center;
 		font-family: $default-font;
+		min-width: 100%;
 
 		@include tablets {
 			flex-direction: column;
 		}
+
+		@include phones {
+			min-width: 40%;
+		}
+
+		@include smallphone {
+			min-width: 30%;
+		}
+
 	}
 
 	&__img-wrap {
 		height: 100%;
-		width: 50%;
+		width: 30%;
 		display: flex;
     flex-direction: column;
     justify-content: space-around;
-		background: url(../images/burgers/burger-slide-01.png) no-repeat center;
-		background-size: contain;
+
+		&--slide01 {
+			background: url(../images/burgers/burger-slide-01.png) no-repeat center;
+			background-size: contain;
+		}
+		&--slide02 {
+			background: url(../images/burgers/burger-slide-02.png) no-repeat center;
+			background-size: contain;
+		}
+		&--slide03 {
+			background: url(../images/burgers/burger-slide-03.png) no-repeat center;
+			background-size: contain;
+		}
 
 		@include tablets {
 			width: 100%;
@@ -43,6 +77,24 @@
 			flex-direction: row;
 			justify-content: space-between;
 		}
+
+		@include phones {
+			margin-top: rem(50px);
+			width: 90%;
+		}
+	}
+
+	&__list {
+		position: absolute;
+		display: none;
+		left: 80px;
+    top: 0px;
+		width: rem(270px);
+		flex-direction: column;
+		background-color: hsla(0, 0%, 100%, 0.8);
+		color: black;
+		font-family: $medium-font;
+
 	}
 
 	&__icon-wrap {
@@ -64,6 +116,10 @@
 			opacity: 0.5;
 		}
 
+		&--active .burgers__list {
+			display: flex;
+		}
+
 		@include phones {
 			top: -30px;
 		}
@@ -71,22 +127,11 @@
 
 	&__desc {
 		font-family: $default-font;
-	}
-
-	&__list {
-		position: absolute;
-		display: none;
-		left: 80px;
-    top: 0px;
-		width: rem(270px);
-		flex-direction: column;
-		background-color: hsla(0, 0%, 100%, 0.8);
-		color: black;
-		font-family: $medium-font;
+		width: 80%;
+		font-size: rem(14px);
 		
-
-		&--active {
-			display: flex;
+		@include phones {
+			width: 100%;
 		}
 	}
 		
@@ -120,7 +165,8 @@
 
 
 	&__text-wrap {
-		width: 50%;
+		width: 60%;
+    margin-left: 30px;
 
 		@include phones {
 			width: 90%;

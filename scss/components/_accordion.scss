@@ -4,14 +4,17 @@
   &__card {
     margin-bottom: 40px;
 
-    &--active .accordion__content {
-      height: 120px;
-    }
-
-    &--active a,
-    &--active a::before {
-      color: $yellow-color;
-      transform: rotate(0deg);
+    &--active {
+      .accordion__content {
+        height: 120px;
+      }
+      .accordion__head {
+        color: $yellow-color;
+      }
+      .accordion__head::before {
+        transition: transform 0.5s;
+        transform: rotate(360deg);
+      }
     }
 
     @include tablets {
@@ -28,6 +31,7 @@
     color: white;
     text-decoration: none;
     font-size: rem(24px);
+    cursor: pointer;
     
     &::before {
       content: "";
@@ -38,6 +42,7 @@
       border-right: 5px solid transparent;
       border-bottom: 5px solid #efaf3f;
       transform: rotate(180deg);
+      transition: transform 0.5s;
     }
   }
   &__body {

@@ -3,6 +3,10 @@
   color: white;
   font-family: $default-font;
 
+  @include phones {
+    flex-direction: column;
+  }
+
   &__block {
     width: 50%;
     display: flex;
@@ -10,6 +14,10 @@
     flex-direction: column;
     padding-right: rem(10px);
     padding-left: rem(10px);
+
+    @include phones {
+      width: 100%;
+    }
   }
 
   &__row {
@@ -29,6 +37,13 @@
 
     &--small {
       width: 21.34%;
+    }
+
+    &--user {
+
+      @include phones {
+        width: 50%;
+      }
     }
 
     &--radio,
@@ -95,7 +110,6 @@
     }
   }
 
-}
 
 .input {
 
@@ -118,6 +132,8 @@ input:checked + .input--radio::before {
   bottom: 2px;
   left: 2px;
   background: #fa0828;     
+}
+
 }
 
 

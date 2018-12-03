@@ -8,8 +8,13 @@
       background: #2f3234;
       opacity: .929;
 
-      &--active .accordion-vertical__body {
-        width: 540px;
+      &--active {
+        .accordion-vertical__body {
+          width: 540px;
+        }
+        .accordion-vertical__head {
+          color: $yellow-color;
+        }
 
         @include phones {
           width: 50%;
@@ -30,6 +35,7 @@
         writing-mode: tb-rl;
         transform: rotate(180deg);
         padding: rem(20px);
+        cursor: pointer;
 
         @include phones {
           padding: rem(15px);

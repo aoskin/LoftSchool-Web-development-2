@@ -6,7 +6,7 @@
   &__title {
 
     font-family: $title-font;
-    font-size: rem(64px);
+    font-size: rem(84px);
     letter-spacing: 5px;
     line-height: 0.889;
     text-align: center;
@@ -15,7 +15,7 @@
 
     @include phones {
       margin-bottom: rem(30px);
-      font-size: rem(44px);
+      font-size: rem(34px);
       padding-top: rem(80px);
     }
 
@@ -23,8 +23,10 @@
       color: white;
       padding-top: 0;
       text-align: left;
+      width: 70%;
 
       @include phones {
+        width: 100%;
         text-align: center;
       }
     }
