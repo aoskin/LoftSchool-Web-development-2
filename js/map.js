@@ -24,7 +24,7 @@ ymaps.ready(function() {
           // Необходимо указать данный тип макета.
           iconLayout: 'default#image',
           // Своё изображение иконки метки.
-          iconImageHref: '/images/icons/map-marker.svg',
+          iconImageHref: 'images/icons/map-marker.svg',
           // Размеры метки.
           iconImageSize: [46, 57],
           // Смещение левого верхнего угла иконки относительно
@@ -39,7 +39,7 @@ ymaps.ready(function() {
           // Необходимо указать данный тип макета.
           iconLayout: 'default#image',
           // Своё изображение иконки метки.
-          iconImageHref: '/images/icons/map-marker.svg',
+          iconImageHref: 'images/icons/map-marker.svg',
           // Размеры метки.
           iconImageSize: [46, 57],
           // Смещение левого верхнего угла иконки относительно
@@ -54,7 +54,7 @@ ymaps.ready(function() {
           // Необходимо указать данный тип макета.
           iconLayout: 'default#image',
           // Своё изображение иконки метки.
-          iconImageHref: '/images/icons/map-marker.svg',
+          iconImageHref: 'images/icons/map-marker.svg',
           // Размеры метки.
           iconImageSize: [46, 57],
           // Смещение левого верхнего угла иконки относительно
@@ -69,7 +69,7 @@ ymaps.ready(function() {
           // Необходимо указать данный тип макета.
           iconLayout: 'default#image',
           // Своё изображение иконки метки.
-          iconImageHref: '/images/icons/map-marker.svg',
+          iconImageHref: 'images/icons/map-marker.svg',
           // Размеры метки.
           iconImageSize: [46, 57],
           // Смещение левого верхнего угла иконки относительно
