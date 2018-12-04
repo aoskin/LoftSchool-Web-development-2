@@ -8,22 +8,12 @@
       background: #2f3234;
       opacity: .929;
 
-      &--active {
-        .accordion-vertical__body {
-          width: 540px;
-        }
-        .accordion-vertical__head {
-          color: $yellow-color;
-        }
-
         @include phones {
           width: 50%;
           display: flex;
           align-items: center;
         }
       }
-
-    }
 
     &__head {
         display: flex;
@@ -39,13 +29,11 @@
 
         @include phones {
           padding: rem(15px);
-
         }
 
         &--bg-01 {
           background: url(../images/bg/menu-bg-01.png) no-repeat;
           background-size: cover;
-    
         }
         &--bg-02 {
           background: url(../images/bg/menu-bg-02.png) no-repeat;
@@ -54,15 +42,23 @@
         &--bg-03 {
           background: url(../images/bg/menu-bg-03.png) no-repeat;
           background-size: cover;
-
         }
-
     }
 
-        &__body {
-          width: 0;
-          overflow: hidden;
+    &__body {
+      width: 0;
+      overflow: hidden;
+
+      &--active { 
+          width: 540px;
+
+          .accordion-vertical__head {
+            color: $yellow-color;
+          }
+  
         }
+        
+    }
     
     &__content {
       padding: rem(60px) rem(30px);
@@ -74,4 +70,4 @@
 
     }
 
-}
+  }

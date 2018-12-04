@@ -4,19 +4,6 @@
   &__card {
     margin-bottom: 40px;
 
-    &--active {
-      .accordion__content {
-        height: 120px;
-      }
-      .accordion__head {
-        color: $yellow-color;
-      }
-      .accordion__head::before {
-        transition: transform 0.5s;
-        transform: rotate(360deg);
-      }
-    }
-
     @include tablets {
       display: flex;
       flex-direction: column;
@@ -48,6 +35,19 @@
   &__body {
     display: flex;
     margin-top: 20px;
+
+    &--active {
+      .accordion__content {
+        height: 120px;
+      }
+      .accordion__head {
+        color: $yellow-color;
+      }
+      .accordion__head::before {
+        transition: transform 0.5s;
+        transform: rotate(360deg);
+      }
+    }
 
   }
   &__content {

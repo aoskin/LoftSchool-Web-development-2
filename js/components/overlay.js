@@ -1,12 +1,13 @@
 
 //Overlay
+
 const openButton = document.querySelector(".openOverlay");
 const template = document.querySelector("#overlayTemplate").innerHTML;
 const overlay = createOverlay(template);
 
 openButton.addEventListener("click", function() {
   overlay.open();
-  overlay.setContent('123');
+  overlay.setContent("Спасибо, данные сохранены");
 });
 
 function createOverlay(template) {

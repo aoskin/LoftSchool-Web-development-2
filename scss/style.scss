@@ -48,7 +48,7 @@ $grey-color:  rgb(47, 50, 52);
 @import "./components/icon";
 @import "./components/hamburger";
 @import "./components/form";
-
+@import "./components/overlay";
 
 html {
   @include tablets {
