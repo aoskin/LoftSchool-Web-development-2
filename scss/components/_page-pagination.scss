@@ -4,21 +4,27 @@
   right: 3rem;
   z-index: 1;
   &__item {
-    display: flex;
-    width: 1rem;
-    height: 1rem;
-    margin-bottom: .3125rem;
-    border: .0625rem solid transparent;
-    border-radius: 50%;
-    cursor: pointer;
-    &::after {
-      display: block;
-      margin: auto;
-      content: '';
-      width: .375rem;
-      height: .375rem;
+    list-style: none;
+
+    
+    }
+    &__link {
+      display: flex;
+      width: 1rem;
+      height: 1rem;
+      margin-bottom: .3125rem;
+      border: .0625rem solid transparent;
       border-radius: 50%;
-      background-color: #fff;
+      cursor: pointer;
+      
+      &::after {
+        display: block;
+        margin: auto;
+        content: '';
+        width: .375rem;
+        height: .375rem;
+        border-radius: 50%;
+        background-color: #fff;
     }
     &:hover,
     &--active {

@@ -83,7 +83,6 @@ const accordElementVertical = document.querySelector('#accordion-vertical');
  hamburger.addEventListener('click', function(e) {
  hamburger.classList.toggle("hamburger--active");
  });
-
  //Slider
  const left = document.querySelector("#slide-left");
  const right = document.querySelector("#slide-right");

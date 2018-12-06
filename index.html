@@ -12,9 +12,38 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+      <ul class="page-pagination">
+          <li class="page-pagination__item">
+            <a class="page-pagination__link page-pagination__link--active" data-scroll-to="0" href="#"></a>
+          </li>
+          <li class="page-pagination__item">
+            <a class="page-pagination__link" data-scroll-to="1" href="#we-best"></a>
+          </li>
+          <li class="page-pagination__item">
+            <a class="page-pagination__link" data-scroll-to="2" href="#burgers"></a>
+          </li>
+          <li class="page-pagination__item">
+            <a class="page-pagination__link" data-scroll-to="3" href="#team"></a>
+          </li>
+          <li class="page-pagination__item">
+            <a class="page-pagination__link" data-scroll-to="4" href="#menu"></a>
+          </li>
+          <li class="page-pagination__item">
+            <a class="page-pagination__link" data-scroll-to="5" href="#review"></a>
+          </li>
+          <li class="page-pagination__item">
+            <a class="page-pagination__link" data-scroll-to="6" href="#work"></a>
+          </li>
+          <li class="page-pagination__item">
+            <a class="page-pagination__link" data-scroll-to="7" href="#order"></a>
+          </li>
+          <li class="page-pagination__item">
+            <a class="page-pagination__link" data-scroll-to="8" href="#contacts"></a>
+          </li>
+        </ul>
+    <div class="wrapper">
     <div class="main">
-
-    <section class="section page-header">
+    <section class="section hero page-header section--active">
       <header>
           <div class="page-header__top">
               <a class="logo" href="#">
@@ -23,16 +52,16 @@
                 </svg>
               </a>
               <nav class="menu">
-                <a class="menu__link" href="#we-best">О нас</a>
-                <a class="menu__link" href="#burgers">Бургеры</a>
-                <a class="menu__link" href="#team">Команда</a>
-                <a class="menu__link" href="#menu">Меню</a>
-                <a class="menu__link" href="#review">Отзывы</a>
-                <a class="menu__link" href="#work">как мы работаем</a>
-                <a class="menu__link" href="#contacts">Контакты</a>
+                <a class="menu__link" href="#we-best" data-scroll-to="1">О нас</a>
+                <a class="menu__link" href="#burgers" data-scroll-to="2">Бургеры</a>
+                <a class="menu__link" href="#team" data-scroll-to="3">Команда</a>
+                <a class="menu__link" href="#menu" data-scroll-to="4">Меню</a>
+                <a class="menu__link" href="#review" data-scroll-to="5">Отзывы</a>
+                <a class="menu__link" href="#work" data-scroll-to="6">как мы работаем</a>
+                <a class="menu__link" href="#contacts" data-scroll-to="8">Контакты</a>
               </nav>
               <div class="page-header__inner">
-                <a class="btn">Заказать</a>
+                <a class="btn" data-scroll-to="7">Заказать</a>
                 <div class="hamburger">
                   <div class="hamburger__wrapper">
                     <div class="hamburger__inner"></div>
@@ -55,31 +84,11 @@
             <p class="page-header__title">Мы делаем</p>
             <p class="page-header__desc">натуральные бургеры</p>
           </div>
-          <ul class="page-pagination">
-            <li class="page-pagination__item page-pagination__item--active">
-              <a data-index="1" href="#1"></a>
-            </li>
-            <li class="page-pagination__item">
-                <a data-index="2" href="#2"></a>
-            </li>
-            <li class="page-pagination__item">
-                <a data-index="3" href="#3"></a>
-            </li>
-            <li class="page-pagination__item">
-                <a data-index="4" href="#4"></a>
-            </li>
-            <li class="page-pagination__item"></li>
-            <li class="page-pagination__item"></li>
-            <li class="page-pagination__item"></li>
-            <li class="page-pagination__item"></li>
-            <li class="page-pagination__item"></li>
-          </ul>
         </div>
         <div class="slide-arrow">
           <a class="slide-arrow__link" href="#"></a>
         </div>
     </section>
-    <main class="main-page">
       <section class="section we-best" id="we-best">
         <div class="container we-best__wrapper">
           <h2 class="section__title section__title--dark">Мы лучшие</h2>
@@ -439,7 +448,7 @@
                 <h3 class="reviews__name">Константин Спилберг</h3>
                 <p class="reviews__desc">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... 
                 Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                <a class="btn btn--reviews openOverlay" href="">Подробнее</a>
+                <a class="btn btn--reviews review__link" href="">Подробнее</a>
               </div>
             </li>
             <li class="reviews__item reviews__item--two">
@@ -510,7 +519,7 @@
         </div>
 
       </section>
-      <section class="section order">
+      <section class="section order" id="order">
         <div class="container">
           <h2 class="section__title section__title--yellow">Закажите доставку</h2>
           <form id="order" class="form">
@@ -584,11 +593,9 @@
             </form>
         </div>
       </section>
-     
-
-    </main>
-    <footer class="page-footer" id="contacts">
-      <div class="page-footer__map" id="map">
+      <section class="section contacts" id="contacts">
+        <footer class="page-footer">
+          <div class="page-footer__map" id="map">
       
       </div>
       <div class="page-footer__inner">
@@ -630,11 +637,15 @@
         </div>
       </div>
     </footer>
+  </section>
   </div>
-    <script src="js/app.js" async defer></script>
+</div>
+    <script src="js/app.js" async></script>
     <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="js/map.js"></script>
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.6/mobile-detect.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+    <script src="js/onepagescroll.js"></script>
   </body>
 </html>
